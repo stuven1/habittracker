@@ -44,7 +44,6 @@ class App extends React.Component {
       value: todos[index].value,
       done: true
     }
-    console.log(newFinishedTask)
     const copyOfFinishedTasks = this.state.finishedTasks
     copyOfFinishedTasks.push(newFinishedTask)
     this.setState({ finishedTasks: copyOfFinishedTasks })
