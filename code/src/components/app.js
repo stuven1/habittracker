@@ -1,9 +1,10 @@
 import React from "react"
 import "./app.css"
 
-import Form from "./form"
+import Form from "./form/form"
 import List from "./list"
 import FinishedTasks from "./finishedtasks"
+import Header from "./header/header"
 
 class App extends React.Component {
 
@@ -51,8 +52,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="background-container">
+        <Header />
 
-        
         <Form
         inputValue={this.state.inputValue}
         handleChange={this.handleChange}

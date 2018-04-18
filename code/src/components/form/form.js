@@ -1,4 +1,5 @@
 import React from "react"
+import "./form.css"
 
 class Form extends React.Component {
 
@@ -6,7 +7,7 @@ class Form extends React.Component {
     return (
       <div className="form">
         <form onSubmit={ (event) => this.props.handleSubmit(event) }>
-          <input
+          <input className="inputfield"
             onChange={ (event) => this.props.handleChange(event) }
             value={this.props.inputValue}
           />
