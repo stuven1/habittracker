@@ -5,8 +5,11 @@ class FinishedTasks extends React.Component {
   render() {
     return (
       <div className="finishedTasks">
-
-        Finished tasks
+        {this.props.finishedTasks.map((todo, index) => {
+          return (
+            <span>{this.props.finishedTasks.value}</span>
+          )
+        })}
       </div>
     )
   }

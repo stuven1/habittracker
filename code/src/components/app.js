@@ -38,6 +38,14 @@ class App extends React.Component {
     const todos = this.state.todos
     todos[index].done = !todos[index].done
     this.setState({ todos })
+
+    const newFinishedTask = {
+      value: todos[index].done,
+      done: true
+    }
+    const copyOfFinishedTasks = this.state.finishedTasks
+    copyOfFinishedTasks.push(newFinishedTask)
+    this.setState({ finishedTasks: copyOfFinishedTasks })
   }
 
   render() {
@@ -51,6 +59,10 @@ class App extends React.Component {
         <List
         todos={this.state.todos}
         handleClick={this.handleClick}/>
+
+        <FinishedTasks
+        finishedTasks={this.state.finishedTasks}
+        />
 
       </div>
     )
