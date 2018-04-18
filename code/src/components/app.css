@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.background-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 100vh;
+}

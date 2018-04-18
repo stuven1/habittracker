@@ -10,7 +10,7 @@ class App extends React.Component {
   state = {
     inputValue: "",
     todos: [
-      { value: "Clean kitchen", done: false },
+      { value: "Clean kitchen", done: false, date: [] },
       { value: "tidy toilet", done: true }
     ],
     finishedTasks: [
@@ -42,7 +42,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="background-container">
+
+        <img src=
         <Form
         inputValue={this.state.inputValue}
         handleChange={this.handleChange}
