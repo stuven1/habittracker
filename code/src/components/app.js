@@ -52,7 +52,7 @@ class App extends React.Component {
     return (
       <div className="background-container">
 
-        <img src=
+        
         <Form
         inputValue={this.state.inputValue}
         handleChange={this.handleChange}
@@ -63,8 +63,7 @@ class App extends React.Component {
         handleClick={this.handleClick}/>
 
         <FinishedTasks
-        finishedTasks={this.state.finishedTasks}
-        />
+        finishedTasks={this.state.finishedTasks}/>
 
       </div>
     )
