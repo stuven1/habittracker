@@ -15,7 +15,6 @@ class List extends React.Component {
               todo={todo} />
           )
         })}
-        list
       </div>
     )
   }

@@ -1,16 +1,16 @@
 import React from "react"
-import "./app.css"
-
-import Form from "./form"
+import Header from "./header/header"
+import Form from "./form/form"
 import List from "./list"
-import FinishedTasks from "./finishedtasks"
+import ListFin from "./listFin"
+import "./app.css"
 
 class App extends React.Component {
 
   state = {
     inputValue: "",
     todos: [
-      { value: "Clean kitchen", done: false },
+      { value: "Clean kitchen", done: false, date: [] },
       { value: "tidy toilet", done: true }
     ],
     finishedTasks: [
@@ -39,10 +39,12 @@ class App extends React.Component {
     todos[index].done = !todos[index].done
     this.setState({ todos })
 
+    // Skapar nytt objekt och pushar in i ny array
     const newFinishedTask = {
-      value: todos[index].done,
+      value: todos[index].value,
       done: true
     }
+    console.log(newFinishedTask)
     const copyOfFinishedTasks = this.state.finishedTasks
     copyOfFinishedTasks.push(newFinishedTask)
     this.setState({ finishedTasks: copyOfFinishedTasks })
@@ -50,20 +52,32 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Form
-        inputValue={this.state.inputValue}
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit} />
+      <div className="background-container">
 
-        <List
-        todos={this.state.todos}
-        handleClick={this.handleClick}/>
+        <div>
+          <p>- All calls are in Component App -</p>
+        </div>
+        <Header />
 
-        <FinishedTasks
-        finishedTasks={this.state.finishedTasks}
-        />
+        <div>
+          <p>- Calls for Component Form -</p>
+          <Form
+          inputValue={this.state.inputValue}
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit} />
+        </div>
 
+        <div>
+          <p>- Calls for Component List -</p>
+          <List
+          todos={this.state.todos}
+          handleClick={this.handleClick}/>
+        </div>
+
+        <div>
+          <p>- Calls for Component FinishedTasks -</p>
+          <ListFin finishedTasks={this.state.finishedTasks}/>
+        </div>
       </div>
     )
   }
