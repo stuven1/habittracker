@@ -1,7 +1,7 @@
 import React from "react"
 import TaskFin from "./taskFin"
 
-class ListFinished extends React.Component {
+class ListFin extends React.Component {
 
   render() {
     return (
@@ -17,5 +17,5 @@ class ListFinished extends React.Component {
 
 }
 
-export default ListFinished
+export default ListFin
 

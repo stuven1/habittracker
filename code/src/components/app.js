@@ -1,9 +1,10 @@
 import React from "react"
-import "./app.css"
 
-import Form from "./form"
+import Form from "./form/form"
 import List from "./list"
 import TaskFin from "./taskFin"
+import Header from "./header/header"
+import "./app.css"
 
 class App extends React.Component {
 
@@ -53,13 +54,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="background-container">
+
         <div>
           <p>- All calls are in Component App -</p>
         </div>
+        <Header />
 
         <div>
           <p>- Calls for Component Form -</p>
-        <Form
+          <Form
           inputValue={this.state.inputValue}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit} />
