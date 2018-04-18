@@ -1,13 +1,14 @@
 import React from "react"
+import TaskFin from "./taskFin"
 
-class FinishedTasks extends React.Component {
+class ListFinished extends React.Component {
 
   render() {
     return (
       <div className="finishedTasks">
         {this.props.finishedTasks.map((todo, index) => {
           return (
-            <span>{this.props.finishedTasks.value}</span>
+            <span>{index + 1 + " " + todo.value}</span>
           )
         })}
       </div>
@@ -16,4 +17,5 @@ class FinishedTasks extends React.Component {
 
 }
 
-export default FinishedTasks
+export default ListFinished
+

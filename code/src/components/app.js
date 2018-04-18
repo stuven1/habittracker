@@ -3,7 +3,7 @@ import "./app.css"
 
 import Form from "./form"
 import List from "./list"
-import FinishedTasks from "./finishedtasks"
+import TaskFin from "./taskFin"
 
 class App extends React.Component {
 
@@ -39,10 +39,12 @@ class App extends React.Component {
     todos[index].done = !todos[index].done
     this.setState({ todos })
 
+    // Skapar nytt objekt och pushar in i ny array
     const newFinishedTask = {
-      value: todos[index].done,
+      value: todos[index].value,
       done: true
     }
+    console.log(newFinishedTask)
     const copyOfFinishedTasks = this.state.finishedTasks
     copyOfFinishedTasks.push(newFinishedTask)
     this.setState({ finishedTasks: copyOfFinishedTasks })
@@ -51,20 +53,29 @@ class App extends React.Component {
   render() {
     return (
       <div className="background-container">
+        <div>
+          <p>- All calls are in Component App -</p>
+        </div>
 
-        
+        <div>
+          <p>- Calls for Component Form -</p>
         <Form
-        inputValue={this.state.inputValue}
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit} />
+          inputValue={this.state.inputValue}
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit} />
+        </div>
 
-        <List
-        todos={this.state.todos}
-        handleClick={this.handleClick}/>
+        <div>
+          <p>- Calls for Component List -</p>
+          <List
+          todos={this.state.todos}
+          handleClick={this.handleClick}/>
+        </div>
 
-        <FinishedTasks
-        finishedTasks={this.state.finishedTasks}/>
-
+        <div>
+          <p>- Calls for Component FinishedTasks -</p>
+          <TaskFin finishedTasks={this.state.finishedTasks}/>
+        </div>
       </div>
     )
   }

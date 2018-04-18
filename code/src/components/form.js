@@ -11,7 +11,6 @@ class Form extends React.Component {
             value={this.props.inputValue}
           />
         </form>
-        form
       </div>
     )
   }
