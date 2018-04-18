@@ -1,9 +1,8 @@
 import React from "react"
-
+import Header from "./header/header"
 import Form from "./form/form"
 import List from "./list"
-import TaskFin from "./taskFin"
-import Header from "./header/header"
+import ListFin from "./listFin"
 import "./app.css"
 
 class App extends React.Component {
@@ -77,7 +76,7 @@ class App extends React.Component {
 
         <div>
           <p>- Calls for Component FinishedTasks -</p>
-          <TaskFin finishedTasks={this.state.finishedTasks}/>
+          <ListFin finishedTasks={this.state.finishedTasks}/>
         </div>
       </div>
     )

@@ -5,10 +5,14 @@ class ListFin extends React.Component {
 
   render() {
     return (
-      <div className="finishedTasks">
-        {this.props.finishedTasks.map((todo, index) => {
+      <div className="list-fin">
+        <p>Your finished tasks:</p>
+        {this.props.finishedTasks.map((finishedTask, index) => {
           return (
-            <span>{index + 1 + " " + todo.value}</span>
+            <TaskFin
+              key={index}
+              index={index}
+              finishedTask={finishedTask} />
           )
         })}
       </div>
