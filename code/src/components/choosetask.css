@@ -1,3 +1,13 @@
-h6 {
-	color: green;
+h3 {
+	color: red;
+	font-size: 40px;
+}
+
+button {
+	color: blue;
+}
+
+h2 {
+	font-size: 30px;
+	color: yellow;
 }

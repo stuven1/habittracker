@@ -1,32 +1,28 @@
 import React from "react"
 import "./choosetask.css"
 
-const taskGenerator = ["Hej", "HÅ"]
+const taskGenerator = ["Hej. Vad heter du?", "HÅ- det är ", "Hejdå!"]
 
 class ChooseTask extends React.Component {
-	// { value: "Cool cleaning", done: false , date: [] },
-	// { value: "Go public", done: false , date: [] }
-	state = {
-	  choosenTask: ""
-	}
+  constructor(props) {
+    super(props)
+    this.state = {
+      lastPickedTask: ""
+    }
+  }
 
-	handleChooseTask = task => {
-	  console.log("hej")
-	  this.setState({
-	    choosenTask: task
-	  })
-	}
+  render() {
+    return (
+      <div className="choosepage">
+        <h3>TORSDAG TEST</h3>
 
-	render() {
-	  return (
-	    <div className="choosepage">
-	      <p>Last clicked: {this.props.choosenTask}</p>
-	      {taskGenerator.map(task => (
-	        <button key={task} task={task} onButtonPress={this.handleChooseTask} />
-	      ))}
-	    </div>
-	  )
-	}
+        {taskGenerator.map(task => (
+          <button key={task} task={task} onButtonPress={this.handleChooseTask} />
+        ))}
+        <h2>{this.props.taskGenerator}</h2>
+      </div>
+    )
+  }
 }
 
 export default ChooseTask
