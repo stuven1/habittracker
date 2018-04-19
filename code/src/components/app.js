@@ -75,7 +75,7 @@ class App extends React.Component {
 
         <div>
           <p>- Calls for Component FinishedTasks -</p>
-          <ListFin finishedTasks={this.state.finishedTasks}/>
+          <ListFin todos={this.state.todos}/>
         </div>
       </div>
     )
