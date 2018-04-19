@@ -10,11 +10,11 @@ class App extends React.Component {
   state = {
     inputValue: "",
     todos: [
-      { value: "Clean kitchen", done: false, date: [] },
-      { value: "tidy toilet", done: true }
-    ],
-    finishedTasks: [
-      { value: "sleep", done: true }
+      { value: "Clean the kitchen", done: false },
+      { value: "Tidy the toilet", done: true },
+      { value: "Plant a tree", done: false},
+      { value: "Die", done: false},
+      { value: "Bike to work", done: true}
     ]
   }
 
@@ -33,20 +33,10 @@ class App extends React.Component {
     this.setState({ inputValue: event.target.value })
   }
 
-// when you click done-button, it changes initial state to checked and changes state on item in the array
   handleClick = (index) => {
     const todos = this.state.todos
     todos[index].done = !todos[index].done
     this.setState({ todos })
-
-    // Skapar nytt objekt och pushar in i ny array
-    const newFinishedTask = {
-      value: todos[index].value,
-      done: true
-    }
-    const copyOfFinishedTasks = this.state.finishedTasks
-    copyOfFinishedTasks.push(newFinishedTask)
-    this.setState({ finishedTasks: copyOfFinishedTasks })
   }
 
   render() {
@@ -75,7 +65,7 @@ class App extends React.Component {
 
         <div>
           <p>- Calls for Component FinishedTasks -</p>
-          <ListFin finishedTasks={this.state.finishedTasks}/>
+          <ListFin todos={this.state.todos} />
         </div>
       </div>
     )
