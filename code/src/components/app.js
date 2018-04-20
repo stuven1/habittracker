@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./header/header"
+import Header from "./header/Header"
 import Form from "./form/form"
 import List from "./list"
 import ListFin from "./listFin"
