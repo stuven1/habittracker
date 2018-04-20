@@ -1,23 +1,16 @@
 import React from "react"
 import "./choosetask.css"
 
-const taskGenerator = ["Hej. Vad heter du?", "HÅ- det är ", "Hejdå!"]
+const taskGenerator = ["Go for a walk", "Eat eco", "Take the bus/metro!"]
 
-class ChooseTask extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      lastPickedTask: ""
-    }
-  }
-
+class ChooseTasks extends React.Component {
   render() {
     return (
       <div className="choosepage">
-        <h3>TORSDAG TEST</h3>
+        <h3>FREDAG TEST</h3>
 
         {taskGenerator.map(task => (
-          <button key={task} task={task} onButtonPress={this.handleChooseTask} />
+          <button onClick={() => this.props.handleChooseTask(task)}>{task}</button>
         ))}
         <h2>{this.props.taskGenerator}</h2>
       </div>
@@ -25,4 +18,4 @@ class ChooseTask extends React.Component {
   }
 }
 
-export default ChooseTask
+export default ChooseTasks
