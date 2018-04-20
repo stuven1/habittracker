@@ -4,7 +4,7 @@ import Form from "./form/form"
 import List from "./list"
 import ListFin from "./listFin"
 import "./app.css"
-import ChooseTasks from "./choosetasks"
+import ChooseTask from "./choosetasks"
 
 class App extends React.Component {
 	state = {
@@ -25,9 +25,6 @@ class App extends React.Component {
 	  const todos = this.state.todos
 	  todos.push(newTodo)
 	  this.setState({ todos, inputValue: "" })
-	}
-	handleChooseTask = test => {
-	  console.log(test)
 	}
 
 	handleChange = event => {
@@ -62,8 +59,8 @@ class App extends React.Component {
 	        <p>- Calls for Component Form -</p>
 	        <Form
   inputValue={this.state.inputValue}
-  handleChange={this.handleChange}
-  handleSubmit={this.handleSubmit} />
+	          handleChange={this.handleChange}
+	          handleSubmit={this.handleSubmit} />
 	      </div>
 
 	      <div>
@@ -78,7 +75,7 @@ class App extends React.Component {
 
 	      <div>
 	        <p>-Test Tasks</p>
-	        <ChooseTasks handleChooseTask={this.handleChooseTask} />
+	        <ChooseTask />
 	      </div>
 	    </div>
 	  )
