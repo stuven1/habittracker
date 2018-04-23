@@ -4,6 +4,7 @@ import ChooseTask from "./ChooseTask"
 import Form from "./form/form"
 import List from "./list"
 import ListFin from "./listFin"
+import Gratification from "./Gratification"
 import "./app.css"
 
 class App extends React.Component {
@@ -73,6 +74,11 @@ class App extends React.Component {
           <p>- Calls for Component FinishedTasks -</p>
           <ListFin todos={this.state.todos} />
         </div>
+
+        <div>
+          <Gratification />
+        </div>
+
       </div>
     )
   }
