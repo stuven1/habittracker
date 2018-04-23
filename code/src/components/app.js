@@ -30,16 +30,6 @@ class App extends React.Component {
     this.setState({ todos, inputValue: ""})
   }
 
-  handleChooseTask = (event) => {
-    const newTodo = {
-      value: event,
-      done: false
-    }
-    const todos = this.state.todos
-    todos.push(newTodo)
-    this.setState({ todos, inputValue: ""})
-  }
-
   handleChange = (event) => {
     this.setState({ inputValue: event.target.value })
   }
@@ -58,8 +48,11 @@ class App extends React.Component {
           <p>- All calls are in Component App -</p>
         </div>
         <Header />
-        <ChooseTask
-          handleChooseTask={this.handleChooseTask}/>
+
+        <div>
+          <ChooseTask
+            handleChooseTask={this.handleChooseTask}/>
+        </div>
 
         <div>
           <p>- Calls for Component Form -</p>
