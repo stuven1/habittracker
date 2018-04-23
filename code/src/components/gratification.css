@@ -37,13 +37,14 @@
   left: 24%;
   top: 27%;
   width: 54%; }
-.body::after { /* ANANASENS KLÄDER - MAN KAN TA BORT DENNA OM MAN INTE KAN RÄTTA TILL RUTNÄTET */
+.body::after {
   background: repeating-linear-gradient(-45deg, transparent, transparent 15%, darkorange 15%, darkorange 20%), repeating-linear-gradient(45deg, transparent, transparent 15%, darkorange 15%, darkorange 20%);
   border-radius: 40%;
   content: '';
   height: 100%;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  left:0% } /*left: 25% changed to Left: 0% - to get the net over pineable body  */
 
 .eye {
   animation: eye 1.04s infinite;
