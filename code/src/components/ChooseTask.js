@@ -10,9 +10,9 @@ class ChooseTask extends React.Component {
       <div className="choose-main">
         {taskGenerator.map(element => (
           <Button
-            task={element} />
+            task={element}
+            handleChooseTask={this.props.handleChooseTask}/>
         ))}
-        <h2>{this.props.taskGenerator}</h2>
       </div>
     )
   }

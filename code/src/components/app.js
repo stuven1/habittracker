@@ -41,14 +41,17 @@ class App extends React.Component {
     this.setState({ todos })
   }
 
+  handleChooseTask = () => {
+    console.log("hej")
+  }
+
   render() {
     return (
       <div className="background-container">
 
         <div>
-          <p>- All calls are in Component App -</p>
+          <Header />
         </div>
-        <Header />
 
         <div>
           <ChooseTask
@@ -56,7 +59,6 @@ class App extends React.Component {
         </div>
 
         <div>
-          <p>- Calls for Component Form -</p>
           <Form
             inputValue={this.state.inputValue}
             handleChange={this.handleChange}
@@ -64,14 +66,12 @@ class App extends React.Component {
         </div>
 
         <div>
-          <p>- Calls for Component List -</p>
           <List
             todos={this.state.todos}
             handleClick={this.handleClick}/>
         </div>
 
         <div>
-          <p>- Calls for Component FinishedTasks -</p>
           <ListFin todos={this.state.todos} />
         </div>
 
