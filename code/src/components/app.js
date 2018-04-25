@@ -72,7 +72,7 @@ class App extends React.Component {
         <div>
           <ChooseTask
             handleAddTask={this.handleAddTask}
-            handleRemoveTask={this.handleRemoveTask}/>
+            handleRemoveTask={this.handleRemoveTask} />
         </div>
 
         <div className="app-form-list-form">

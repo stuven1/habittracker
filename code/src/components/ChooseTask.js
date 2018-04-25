@@ -8,9 +8,11 @@ class ChooseTask extends React.Component {
 
   render() {
     return (
-      <div className="chooseTask-container">
+      <div >
+        <div className="choosetask-headline">Choose your <br /> world saving tasks!</div>
 
-        <div className="choosetask-headline">Choose your world saving tasks!</div>
+        <div className="chooseTask-container">
+
         {taskGenerator.map((element, index) => (
           <Button
             key={index}
@@ -18,6 +20,7 @@ class ChooseTask extends React.Component {
             handleAddTask={this.props.handleAddTask}
             handleRemoveTask={this.props.handleRemoveTask} />
         ))}
+        </div>
       </div>
     )
   }
