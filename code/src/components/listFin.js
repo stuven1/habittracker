@@ -10,7 +10,7 @@ class ListFin extends React.Component {
 
     return (
       <div className="listfin">
-        <div>
+        <div className="choosetask-headline">
           <p>Here are you'r finished tasks:</p>
           <div>
             {filteredArray.map((todo, index) => {

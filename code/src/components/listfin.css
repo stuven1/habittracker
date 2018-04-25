@@ -1,6 +1,6 @@
 .listfin {
   height: 100vh;
-  background-color: #d4ffd8;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,4 +9,12 @@
 .listfin p {
   width: 80%;
   margin: 20px auto;
+}
+
+.choosetask-headline {
+  height: 90px;
+  padding: 30px;
+  border-top: 2px dashed black;
+  font-size: 30px;
+  color: black;
 }

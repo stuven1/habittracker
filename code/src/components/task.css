@@ -14,7 +14,7 @@
 }
 
 .task-text {
-  background-color: #a3d1ff5c;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,10 +22,11 @@
   padding-left: 10px;
   text-align: left;
   width: 500px;
-  color: white;
+  color: black;
   font-family: "URWGeometric-Bold.woff";
   font-size: 20px;
-  border-bottom: 3px dotted white;
+  border-bottom: 2px dotted black;
+
 }
 
 .task-button {
