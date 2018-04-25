@@ -54,11 +54,6 @@ class App extends React.Component {
         </div>
 
         <div>
-          <ChooseTask
-            handleChooseTask={this.handleChooseTask}/>
-        </div>
-
-        <div>
           <Form
             inputValue={this.state.inputValue}
             handleChange={this.handleChange}
