@@ -7,15 +7,17 @@ class List extends React.Component {
   render() {
     return (
       <div className="list">
+
+        <div>
+          <p className="white">
+            Collect 7 tasks and you'll get a gratification!
+          </p>
+        </div>
+
         <div>
           <div>
-            <p>
-              Collect 7 tasks and you'll get a gratification!
-            </p>
-          </div>
-          <div>
-            <p>
-              Your task-list:
+            <p className="underlined">
+              YOUR TASK-LIST
             </p>
           </div>
           <div>
@@ -28,11 +30,6 @@ class List extends React.Component {
                 todo={todo} />
             )
           })}
-          </div>
-          <div>
-            <p>
-              Insert new task here:
-            </p>
           </div>
         </div>
       </div>

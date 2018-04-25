@@ -6,13 +6,15 @@
 .background-container {
   display: flex;
   flex-flow: column;
-  /*justify-content: space-around;*/
   text-align: center;
-  height: 100vh;
 }
 
 .app-form-list-form {
   background-color: #a3f5ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .app-form {
