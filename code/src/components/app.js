@@ -14,9 +14,9 @@ class App extends React.Component {
     todos: [
       { value: "Clean the kitchen", done: false },
       { value: "Tidy the toilet", done: true },
-      { value: "Plant a tree", done: false},
-      { value: "Die", done: false},
-      { value: "Bike to work", done: true}
+      { value: "Plant a tree", done: false },
+      { value: "Die", done: false },
+      { value: "Bike to work", done: true }
     ]
   }
 
@@ -31,6 +31,7 @@ class App extends React.Component {
     this.setState({ todos, inputValue: ""})
   }
 
+
   handleChange = (event) => {
     this.setState({ inputValue: event.target.value })
   }
@@ -41,9 +42,9 @@ class App extends React.Component {
     this.setState({ todos })
   }
 
-  handleChooseTask = () => {
-    console.log("hej")
-  }
+  // handleChooseTask = () => {
+  //   console.log("hej")
+  // }
 
   render() {
     return (
@@ -55,7 +56,7 @@ class App extends React.Component {
 
         <div>
           <ChooseTask
-            handleChooseTask={this.handleChooseTask}/>
+            handleAddTasks={this.handleAddTasks} />
         </div>
 
         <div>
