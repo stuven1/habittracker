@@ -1,6 +1,6 @@
 .chooseTask-button {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: #00ff00;
   color: white;
   border-style: none;
@@ -12,7 +12,14 @@
 .chooseTask-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 20px 50px;
+  background-color: #feffc1;
+}
 
+@media(min-width: 540px) {
+  .chooseTask-button {
+    width: 200px;
+    height: 200px;
+  }
 }

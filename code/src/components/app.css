@@ -9,3 +9,11 @@
   text-align: center;
   height: 100vh;
 }
+
+.app-form-list-form {
+  background-color: #a3f5ff;
+}
+
+.app-form {
+  margin-top: 20px;
+}
