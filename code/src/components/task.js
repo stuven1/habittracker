@@ -7,9 +7,8 @@ class Task extends React.Component {
     return (
       <div className="task-container">
         <div className="task-text-button">
-          {/* // ternary */}
           <div className="task-text">
-            <span style={{ textDecoration: this.props.todo.done ? "line-through" : "none" }}>
+            <span style={{ textDecoration: this.props.todo.done ? "line-through" : "none" } }>
               {this.props.todo.value}
             </span>
           </div>
