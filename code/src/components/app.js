@@ -4,7 +4,7 @@ import ChooseTask from "./ChooseTask"
 import Form from "./form/form"
 import List from "./list"
 import ListFin from "./listFin"
-import Gratification from "./Gratification"
+import Pineapple from "./Pineapple"
 import "./app.css"
 
 class App extends React.Component {
@@ -60,6 +60,7 @@ class App extends React.Component {
         </div>
 
         <div>
+<<<<<<< HEAD
           <ChooseTask
             handleAddTask={this.handleAddTask} />
         </div>
@@ -72,17 +73,22 @@ class App extends React.Component {
         </div>
 
         <div>
+=======
+>>>>>>> 7586cfb6eed222e39f6cf0c0df98c0ea6828deb5
           <List
             todos={this.state.todos}
             handleClick={this.handleClick} />
         </div>
 
         <div>
-          <ListFin todos={this.state.todos} />
+          <Form
+            inputValue={this.state.inputValue}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit} />
         </div>
 
         <div>
-          <Gratification />
+          <ListFin todos={this.state.todos} />
         </div>
 
       </div>

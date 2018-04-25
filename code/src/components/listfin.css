@@ -1,0 +1,12 @@
+.listfin {
+  height: 100vh;
+  background-color: #d4ffd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listfin p {
+  width: 80%;
+  margin: 20px auto;
+}
