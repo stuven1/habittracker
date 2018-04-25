@@ -18,9 +18,11 @@ class Header extends React.Component {
           <img className="kivra-logo" src={KivraLogo} alt="Kivra logo" />
         </div>
 
-        <button className="go-button">
-          Go!
-        </button>
+        <a href="#f1">
+          <button className="go-button">
+            Go!
+          </button>
+        </a>
 
       </div>
     )

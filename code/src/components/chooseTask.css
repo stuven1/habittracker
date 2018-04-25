@@ -20,14 +20,16 @@ button.down {
 .chooseTask-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   padding: 20px 50px;
-  height: 160vh;
   width: 100%;
 }
 
 .choosetask-headline {
+  height: 90px;
+  padding: 30px;
+  border-top: 2px dashed black;
   font-size: 30px;
   color: black;
 }

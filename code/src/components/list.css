@@ -6,8 +6,17 @@
 
 .list .underlined {
   text-decoration: underline;
+  font-size: 30px;
 }
 
 .list .white {
   color: white;
+}
+
+.choosetask-headline {
+  height: 90px;
+  padding: 30px;
+  border-top: 2px dashed black;
+  font-size: 30px;
+  color: black;
 }
