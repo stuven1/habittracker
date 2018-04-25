@@ -19,7 +19,7 @@ class ListFin extends React.Component {
           </div>
           <div>
             <p>
-              You have completed {filteredArray.length} tasks out of {this.props.todos.length} tasks!
+              You have completed {filteredArray.length} tasks. In your list you have {this.props.todos.length} tasks. Keep up the good work!
             </p>
           </div>
           { filteredArray.length>6 ?

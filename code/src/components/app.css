@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "URWGeometric-Bold.woff";
 }
 
 .background-container {
@@ -8,4 +9,12 @@
   /*justify-content: space-around;*/
   text-align: center;
   height: 100vh;
+}
+
+.app-form-list-form {
+  background-color: #a3f5ff;
+}
+
+.app-form {
+  margin-top: 20px;
 }
