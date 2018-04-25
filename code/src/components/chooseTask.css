@@ -1,0 +1,18 @@
+.chooseTask-button {
+  width: 200px;
+  height: 200px;
+  background-color: #00ff00;
+  color: white;
+  border-style: none;
+  margin: 10px;
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 20px;
+}
+
+.chooseTask-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 20px 50px;
+
+}

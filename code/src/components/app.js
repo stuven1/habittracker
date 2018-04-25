@@ -20,7 +20,7 @@ class App extends React.Component {
     ]
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault()
     const newTodo = {
       value: this.state.inputValue,
@@ -31,20 +31,25 @@ class App extends React.Component {
     this.setState({ todos, inputValue: ""})
   }
 
+  handleAddTask = task => {
+    const addTask = {
+      value: task,
+      done: false
+    }
+    const todos = this.state.todos
+    todos.push(addTask)
+    this.setState({ todos })
+  }
 
-  handleChange = (event) => {
+  handleChange = event => {
     this.setState({ inputValue: event.target.value })
   }
 
-  handleClick = (index) => {
+  handleClick = index => {
     const todos = this.state.todos
     todos[index].done = !todos[index].done
     this.setState({ todos })
   }
-
-  // handleChooseTask = () => {
-  //   console.log("hej")
-  // }
 
   render() {
     return (
@@ -56,7 +61,7 @@ class App extends React.Component {
 
         <div>
           <ChooseTask
-            handleAddTasks={this.handleAddTasks} />
+            handleAddTask={this.handleAddTask} />
         </div>
 
         <div>
@@ -69,7 +74,7 @@ class App extends React.Component {
         <div>
           <List
             todos={this.state.todos}
-            handleClick={this.handleClick}/>
+            handleClick={this.handleClick} />
         </div>
 
         <div>

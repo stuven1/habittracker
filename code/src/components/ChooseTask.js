@@ -1,17 +1,18 @@
 import React from "react"
-import Button from "./Button";
+import Button from "./Button"
+import "./chooseTask.css"
 
-const taskGenerator = ["Go for a walk", "Eat eco", "Take the bus/metro!"]
+const taskGenerator = ["Recycle", "Eat eco", "Commute", "Buy nothing-day", "Shower like Gunde" ]
 
 class ChooseTask extends React.Component {
 
   render() {
     return (
-      <div className="choose-main">
+      <div className="chooseTask-container">
         {taskGenerator.map(element => (
           <Button
             task={element}
-            handleChooseTask={this.props.handleChooseTask}/>
+            handleAddTask={this.props.handleAddTask} />
         ))}
       </div>
     )

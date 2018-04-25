@@ -5,7 +5,7 @@ class List extends React.Component {
 
   render() {
     return (
-      <div className="list">
+      <div className="list-container">
         {this.props.todos.map((todo, index) => {
           return (
             <Task

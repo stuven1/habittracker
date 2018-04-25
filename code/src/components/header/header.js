@@ -1,6 +1,7 @@
 import React from "react"
 import "./header.css"
 
+import KivraLogo from "../../images/kivralogo.png"
 import Sevenlogoleaf from "../../images/sevenlogoleaf.png"
 
 class Header extends React.Component {
@@ -10,12 +11,18 @@ class Header extends React.Component {
       <div className="header-container">
 
         <div className="logo-container">
-          <img className="sevendaylogo" src={Sevenlogoleaf} />
+          <img className="sevendaylogo" src={Sevenlogoleaf} alt="Seven day world save-logo" />
+        </div>
+        <div className="kivra-logo-container">
+          <p className="inCollab-txt">in collaboration with</p>
+          <img className="kivra-logo" src={KivraLogo} alt="Kivra logo" />
         </div>
 
+        <button className="go-button">
+          Go!
+        </button>
+
       </div>
-
-
     )
   }
 }
