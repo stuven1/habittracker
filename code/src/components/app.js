@@ -15,7 +15,7 @@ class App extends React.Component {
       { value: "Clean the kitchen", done: false },
       { value: "Tidy the toilet", done: true },
       { value: "Plant a tree", done: false },
-      { value: "Die", done: false },
+      { value: "Buy ecological food", done: false },
       { value: "Bike to work", done: true }
     ]
   }
@@ -64,24 +64,24 @@ class App extends React.Component {
             handleAddTask={this.handleAddTask} />
         </div>
 
-        <div>
-          <Form
-            inputValue={this.state.inputValue}
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit} />
-        </div>
-
-        <div>
-          <List
-            todos={this.state.todos}
-            handleClick={this.handleClick} />
+        <div className="app-form-list-form">
+          <div className="app-form">
+            <Form
+              inputValue={this.state.inputValue}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit} />
+          </div>
+          <div>
+            <List
+              todos={this.state.todos}
+              handleClick={this.handleClick} />
+          </div>
         </div>
 
         <div>
           <ListFin
             todos={this.state.todos} />
         </div>
-
       </div>
     )
   }

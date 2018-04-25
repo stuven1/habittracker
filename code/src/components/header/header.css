@@ -23,7 +23,6 @@
   height: 20px;
 }
 .inCollab-txt {
-  font-family: "URWGeometric-Bold.woff";
   font-size: 16px;
   margin-top: 30px;
 }
@@ -35,8 +34,13 @@
   color: white;
   border-style: none;
   margin-top: 60px;
-  font-family: "URWGeometric-Bold.woff";
   font-size: 20px;
+  border-radius: 8px;
+}
+
+.go-button:{
+  background: red;
+
 }
 
 @keyframes shake {

@@ -1,20 +1,39 @@
-.chooseTask-button {
-  width: 200px;
-  height: 200px;
+.chooseTaskButton {
+  width: 150px;
+  height: 150px;
   background-color: #22b573;
   color: white;
   border-style: none;
   margin: 10px;
-  font-family: "URWGeometric-Bold.woff";
-  font-size: 20px;
+  font-size: 30px;
+  outline: none;
+  /* box-shadow: 0px 5px black; */
 }
+
+button.down {
+  background: #137e4e;
+  color: lightgrey;
+  outline: none;
+  text-decoration: line-through;
+}
+
 
 .chooseTask-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 20px 50px;
-  height: 100vh;
+  height: 160vh;
   width: 100%;
-
 }
+
+.choosetask-headline {
+  font-size: 30px;
+  color: black;
+}
+/* @media(min-width: 540px) {
+  .chooseTask-button {
+    width: 200px;
+    height: 200px;
+  }
+} */
