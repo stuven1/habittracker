@@ -1,3 +1,13 @@
 .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
+.list .underlined {
+  text-decoration: underline;
+}
+
+.list .white {
+  color: white;
 }
