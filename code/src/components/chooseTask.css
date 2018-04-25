@@ -32,10 +32,12 @@ button.down {
   border-top: 2px dashed black;
   font-size: 30px;
   color: black;
+  margin-top: 150px;
 }
-/* @media(min-width: 540px) {
+
+@media(min-width: 540px) {
   .chooseTask-button {
     width: 200px;
     height: 200px;
   }
-} */
+}

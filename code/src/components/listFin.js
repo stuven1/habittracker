@@ -17,17 +17,19 @@ class ListFin extends React.Component {
               return <div key={index}>Task {index +1}: {todo.value}</div>
             })}
           </div>
-          <div>
-            <p>
-              You have completed {filteredArray.length} tasks. In your list you have {this.props.todos.length} tasks. Keep up the good work!
-            </p>
-          </div>
+          
           { filteredArray.length > 6 ?
           <div className="lf-pineapple">
             <Pineapple />
           </div>
             : <div><div><img className="sport" src={require("../images/sport.gif")}/></div><div>You're on the good track!</div></div>}
-        </div>
+
+            <div>
+              <p>
+                You have completed {filteredArray.length} tasks. In your list you have {this.props.todos.length} tasks. Keep up the good work!
+              </p>
+            </div>
+          </div>
       </div>
     )
   }
