@@ -4,7 +4,7 @@ import ChooseTask from "./ChooseTask"
 import Form from "./form/form"
 import List from "./list"
 import ListFin from "./listFin"
-import Gratification from "./Gratification"
+import Pineapple from "./Pineapple"
 import "./app.css"
 
 class App extends React.Component {
@@ -68,10 +68,6 @@ class App extends React.Component {
 
         <div>
           <ListFin todos={this.state.todos} />
-        </div>
-
-        <div>
-          <Gratification />
         </div>
 
       </div>

@@ -6,6 +6,7 @@ class List extends React.Component {
   render() {
     return (
       <div className="list">
+        <div>
         {this.props.todos.map((todo, index) => {
           return (
             <Task
@@ -15,7 +16,14 @@ class List extends React.Component {
               todo={todo} />
           )
         })}
+        </div>
+        <div>
+          <p>
+            Collect 7 tasks and you'll get a gratification!
+          </p>
+        </div>
       </div>
+
     )
   }
 

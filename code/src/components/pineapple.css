@@ -1,9 +1,8 @@
-
 .pineapple {
   font-size: 90vmin;
-  height: 1em;
+  height: .5em;
   margin: 5vmin auto;
-  width: .9em;
+  width: .5em;
   position: relative; }
 .pineapple div {
   position: absolute; }
