@@ -21,6 +21,12 @@ class ChooseTask extends React.Component {
             handleRemoveTask={this.props.handleRemoveTask} />
         ))}
         </div>
+
+        <a href="#f2">
+          <button className="go-button">
+            Todo's
+          </button>
+        </a>
       </div>
     )
   }

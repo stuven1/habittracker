@@ -71,12 +71,14 @@ class App extends React.Component {
             handleRemoveTask={this.handleRemoveTask} />
         </div>
 
+        <div id="f2"></div>
         <div className="app-form-list-form">
           <div>
             <List
               todos={this.state.todos}
               handleClick={this.handleClick} />
           </div>
+
           <div className="app-form">
             <Form
               inputValue={this.state.inputValue}
