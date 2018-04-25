@@ -15,7 +15,8 @@ class ChooseTask extends React.Component {
           <Button
             key={index}
             task={element}
-            handleAddTask={this.props.handleAddTask} />
+            handleAddTask={this.props.handleAddTask}
+            handleRemoveTask={this.props.handleRemoveTask} />
         ))}
       </div>
     )

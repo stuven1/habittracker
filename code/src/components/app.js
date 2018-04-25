@@ -41,6 +41,16 @@ class App extends React.Component {
     this.setState({ todos })
   }
 
+  handleRemoveTask = taskValue => {
+    const todos = this.state.todos
+    todos.forEach((task, index) => {
+      if (task.value == taskValue) {
+        todos.splice(index, 1)
+      }
+    })
+    this.setState({ todos })
+  }
+
   handleChange = event => {
     this.setState({ inputValue: event.target.value })
   }
@@ -61,7 +71,8 @@ class App extends React.Component {
 
         <div>
           <ChooseTask
-            handleAddTask={this.handleAddTask} />
+            handleAddTask={this.handleAddTask}
+            handleRemoveTask={this.handleRemoveTask}/>
         </div>
 
         <div className="app-form-list-form">
