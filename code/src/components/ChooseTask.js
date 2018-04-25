@@ -2,7 +2,7 @@ import React from "react"
 import Button from "./Button"
 import "./chooseTask.css"
 
-const taskGenerator = ["Recycle", "Eat eco", "Commute", "Buy nothing", "Shower fast", "Use Kivra!", "Rent a sweater", "Turn it off", "Ride a bike", "switch to LED" ]
+const taskGenerator = ["Recycle", "Eat eco", "Commute", "Repair existing thing", "Quick shower", "Use Kivra!", "Rent a dress", "Turn devices off", "Ride a bike", "Switch to LED" ]
 
 class ChooseTask extends React.Component {
 

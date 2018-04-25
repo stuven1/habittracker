@@ -12,11 +12,7 @@ class App extends React.Component {
   state = {
     inputValue: "",
     todos: [
-      { value: "Clean the kitchen", done: false },
-      { value: "Tidy the toilet", done: true },
       { value: "Plant a tree", done: false },
-      { value: "Buy ecological food", done: false },
-      { value: "Bike to work", done: true }
     ]
   }
 
