@@ -65,17 +65,16 @@ class App extends React.Component {
         </div>
 
         <div className="app-form-list-form">
-
-          <div>
-            <List
-              todos={this.state.todos}
-              handleClick={this.handleClick} />
-          </div>
           <div className="app-form">
             <Form
               inputValue={this.state.inputValue}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit} />
+          </div>
+          <div>
+            <List
+              todos={this.state.todos}
+              handleClick={this.handleClick} />
           </div>
         </div>
 
@@ -83,7 +82,6 @@ class App extends React.Component {
           <ListFin
             todos={this.state.todos} />
         </div>
-
       </div>
     )
   }
