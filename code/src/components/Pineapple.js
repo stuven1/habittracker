@@ -5,6 +5,7 @@ class Pineapple extends React.Component {
 
   render() {
     return (
+      <div>
       <div className="pineapple">
         <div className="leaf middle"></div>
         <div className="leaf left"></div>
@@ -19,6 +20,8 @@ class Pineapple extends React.Component {
           <div className="leg left"></div>
           <div className="leg right"></div>
         </div>
+      </div>
+        <div className="gratification-text">Woow! You've finished 7 tasks!!</div>
       </div>
     )
   }
