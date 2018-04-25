@@ -9,8 +9,9 @@ class ChooseTask extends React.Component {
   render() {
     return (
       <div className="chooseTask-container">
-        {taskGenerator.map(element => (
+        {taskGenerator.map((element, index) => (
           <Button
+            key={index}
             task={element}
             handleAddTask={this.props.handleAddTask} />
         ))}

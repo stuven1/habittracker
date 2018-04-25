@@ -3,7 +3,6 @@ import "./chooseTask.css"
 
 class Button extends React.Component {
 
-
   handleClick = () => {
     this.props.handleAddTask(this.props.task)
   }

@@ -13,7 +13,9 @@ class ListFin extends React.Component {
         <div>
           <p>Here are you'r finished tasks:</p>
           <div>
-            {filteredArray.map((element, index) => <div>Task {index +1}: {element.value}</div>)}
+            {filteredArray.map((todo, index) => {
+              return <div key={index}>Task {index +1}: {todo.value}</div>
+            })}
           </div>
           <div>
             <p>

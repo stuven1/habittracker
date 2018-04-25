@@ -5,12 +5,9 @@ class List extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div className="list-container">
-=======
       <div className="list">
         <div>
->>>>>>> 7586cfb6eed222e39f6cf0c0df98c0ea6828deb5
         {this.props.todos.map((todo, index) => {
           return (
             <Task
@@ -27,7 +24,7 @@ class List extends React.Component {
           </p>
         </div>
       </div>
-
+      </div>
     )
   }
 

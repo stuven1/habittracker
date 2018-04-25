@@ -60,7 +60,6 @@ class App extends React.Component {
         </div>
 
         <div>
-<<<<<<< HEAD
           <ChooseTask
             handleAddTask={this.handleAddTask} />
         </div>
@@ -73,8 +72,7 @@ class App extends React.Component {
         </div>
 
         <div>
-=======
->>>>>>> 7586cfb6eed222e39f6cf0c0df98c0ea6828deb5
+
           <List
             todos={this.state.todos}
             handleClick={this.handleClick} />
@@ -88,7 +86,8 @@ class App extends React.Component {
         </div>
 
         <div>
-          <ListFin todos={this.state.todos} />
+          <ListFin
+            todos={this.state.todos} />
         </div>
 
       </div>
