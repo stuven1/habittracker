@@ -69,7 +69,7 @@ class App extends React.Component {
           <Header />
         </div>
 
-        <div>
+        <div id="f1">
           <ChooseTask
             handleAddTask={this.handleAddTask}
             handleRemoveTask={this.handleRemoveTask} />

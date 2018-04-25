@@ -9,15 +9,15 @@ class List extends React.Component {
       <div className="list">
 
         <div>
-          <p className="white">
-            Collect 7 tasks and you'll get a gratification!
+          <p className="choosetask-headline">
+            Finish 7 todos <br /> – get a great reward!
           </p>
         </div>
 
         <div>
           <div>
             <p className="underlined">
-              YOUR TASK-LIST
+              MY WORLD-SAVING <br /> TODO LIST
             </p>
           </div>
           <div>

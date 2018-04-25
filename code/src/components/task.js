@@ -6,7 +6,7 @@ class Task extends React.Component {
   render() {
     return (
       <div className="task-container">
-        <div className="task-text-button">
+        {/* <div className="task-text-button"> */}
           <div className="task-text">
             <span style={{ textDecoration: this.props.todo.done ? "line-through" : "none" } }>
               {this.props.todo.value}
@@ -18,8 +18,8 @@ class Task extends React.Component {
               {this.props.todo.done ? "undo" : "complete"}
             </button>
           </div>
-          
-        </div>
+
+        {/* </div> */}
       </div>
     )
   }
