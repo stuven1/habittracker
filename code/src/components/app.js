@@ -72,17 +72,9 @@ class App extends React.Component {
         </div>
 
         <div>
-
           <List
             todos={this.state.todos}
             handleClick={this.handleClick} />
-        </div>
-
-        <div>
-          <Form
-            inputValue={this.state.inputValue}
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit} />
         </div>
 
         <div>
