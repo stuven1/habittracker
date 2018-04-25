@@ -22,7 +22,7 @@ class ChooseTask extends React.Component {
         ))}
         </div>
 
-        <a href="#f2">
+        <a className="button-link" href="#f2">
           <button className="go-button">
             Todo's
           </button>

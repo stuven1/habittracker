@@ -10,9 +10,8 @@
 }
 
 .app-form-list-form {
-  /* background-color: #69a0a7; */
   background-color: white;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
