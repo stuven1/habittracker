@@ -12,7 +12,7 @@ class App extends React.Component {
   state = {
     inputValue: "",
     todos: [
-      { value: "Plant a tree", done: false }
+      { value: "Plant a tree", done: false, id: Date.now() }
     ]
   }
 
@@ -20,8 +20,10 @@ class App extends React.Component {
     event.preventDefault()
     const newTodo = {
       value: this.state.inputValue,
-      done: false
+      done: false,
+      id: Date.now()
     }
+
     const todos = this.state.todos
     todos.push(newTodo)
     this.setState({ todos, inputValue: ""})
@@ -30,18 +32,18 @@ class App extends React.Component {
   handleAddTask = task => {
     const addTask = {
       value: task,
-      done: false
+      done: false,
+      id: Date.now()
     }
     const todos = this.state.todos
     todos.push(addTask)
     this.setState({ todos })
   }
 
-  handleRemoveTask = taskValue => {
+  handleRemoveTask = id => {
     const todos = this.state.todos
-    console.log(todos)
     todos.forEach((task, index) => {
-      if (task.value == taskValue) {
+      if (task.id == id) {
         todos.splice(index, 1)
       }
     })

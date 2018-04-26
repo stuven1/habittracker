@@ -3,9 +3,8 @@ import "./task.css"
 
 class Task extends React.Component {
 
-  handleClick = () => {
-    console.log('this.props.handleRemoveTask', this.props.handleRemoveTask)
-    this.props.handleRemoveTask(this.props.index)
+  handleDeleteClick = () => {
+    this.props.handleRemoveTask(this.props.todo.id)
   }
 
   render() {
@@ -25,7 +24,7 @@ class Task extends React.Component {
           </div>
 
           <div>
-            <button className="delete-button" onClick={this.handleClick}>
+            <button className="delete-button" onClick={this.handleDeleteClick}>
               Delete
             </button>
           </div>
