@@ -3,6 +3,11 @@ import "./task.css"
 
 class Task extends React.Component {
 
+  handleClick = () => {
+    console.log('this.props.handleRemoveTask', this.props.handleRemoveTask)
+    this.props.handleRemoveTask(this.props.index)
+  }
+
   render() {
     return (
       <div className="task-container">
@@ -13,9 +18,15 @@ class Task extends React.Component {
             </span>
           </div>
 
-          <div className="task-button">
-            <button onClick={() => this.props.handleClick(this.props.index)}>
-              {this.props.todo.done ? "undo" : "complete"}
+          <div>
+            <button className="task-button" onClick={() => this.props.handleClick(this.props.index)}>
+              {this.props.todo.done ? "todo" : "done"}
+            </button>
+          </div>
+
+          <div>
+            <button className="delete-button" onClick={this.handleClick}>
+              Delete
             </button>
           </div>
 

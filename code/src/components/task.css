@@ -28,18 +28,28 @@
   border-bottom: 2px dotted black;
 
 }
-
-.task-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100px;
-
-  }
-
-.task-button button {
+.delete-button {
+  text-align: center;
+  width: 80px;
+  border: 1px dashed black;
+  outline: none;
   background-color: #27b472;
   color: white;
   border-style: none;
   font-style: italic;
+  height: 30px;
+  font-size: 14px;
+  padding-top: 5px;
 }
+
+.task-button {
+  text-align: center;
+  width: 80px;
+  background-color: #27b472;
+  color: white;
+  border-style: none;
+  font-style: italic;
+  height: 30px;
+  font-size: 14px;
+  padding-top: 5px;
+  }

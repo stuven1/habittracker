@@ -17,7 +17,7 @@ class List extends React.Component {
         <div>
           <div>
             <p className="underlined">
-              MY WORLD-SAVING <br /> TODO LIST
+              My world-saving <br /> awesome todo-list:
             </p>
           </div>
           <div>
@@ -27,9 +27,10 @@ class List extends React.Component {
                 key={index}
                 index={index}
                 handleClick={this.props.handleClick}
-                todo={todo} />
-            )
-          })}
+                todo={todo}
+                handleRemoveTask={this.props.handleRemoveTask} />
+              )
+            })}
           </div>
         </div>
       </div>

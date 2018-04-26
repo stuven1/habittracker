@@ -12,7 +12,7 @@ class App extends React.Component {
   state = {
     inputValue: "",
     todos: [
-      { value: "Plant a tree", done: false },
+      { value: "Plant a tree", done: false }
     ]
   }
 
@@ -39,6 +39,7 @@ class App extends React.Component {
 
   handleRemoveTask = taskValue => {
     const todos = this.state.todos
+    console.log(todos)
     todos.forEach((task, index) => {
       if (task.value == taskValue) {
         todos.splice(index, 1)
@@ -46,6 +47,7 @@ class App extends React.Component {
     })
     this.setState({ todos })
   }
+
 
   handleChange = event => {
     this.setState({ inputValue: event.target.value })
@@ -71,12 +73,14 @@ class App extends React.Component {
             handleRemoveTask={this.handleRemoveTask} />
         </div>
 
-        <div id="f2"></div>
+        <div id="f2" />
+
         <div className="app-form-list-form">
           <div>
             <List
               todos={this.state.todos}
-              handleClick={this.handleClick} />
+              handleClick={this.handleClick}
+              handleRemoveTask={this.handleRemoveTask} />
           </div>
 
           <div className="app-form">
