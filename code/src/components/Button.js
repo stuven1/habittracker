@@ -11,9 +11,9 @@ class Button extends React.Component {
   }
 
   handleClick = () => {
-    if (this.state.down) {
-      this.props.handleRemoveTask(this.props.task)
-    } else {
+    if (!this.state.down) {
+      //this.props.handleRemoveTask(this.props.task)
+    //} else {
       this.props.handleAddTask(this.props.task)
     }
     this.setState({
