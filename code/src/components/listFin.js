@@ -11,7 +11,6 @@ class ListFin extends React.Component {
     return (
       <div className="listfin">
         <div className="choosetask-headline">
-          <p>Here are you'r finished tasks:</p>
           <div>
             {filteredArray.map((todo, index) => {
               return <div key={index}>Task {index +1}: {todo.value}</div>
@@ -19,14 +18,14 @@ class ListFin extends React.Component {
           </div>
           <div>
             <p>
-              You have completed {filteredArray.length} tasks. In your list you have {this.props.todos.length} tasks. Keep up the good work!
+              Yay! You have done {filteredArray.length} tasks. In your list you have {this.props.todos.length} tasks todo. Keep up the good work!
             </p>
           </div>
           { filteredArray.length > 6 ?
           <div className="lf-pineapple">
             <Pineapple />
           </div>
-            : <div><div><img className="sport" src={require("../images/sport.gif")}/></div><div>You're on the good track!</div></div>}
+            : <div><div><img className="sport" src={require("../images/sport.gif")}/></div><div>Keep working it <br /> – you are on good track!</div></div>}
         </div>
       </div>
     )
