@@ -27,6 +27,7 @@ class List extends React.Component {
                 key={index}
                 handleClick={this.props.handleClick}
                 todo={todo}
+                index={index}
                 handleRemoveTask={this.props.handleRemoveTask} />
               )
             })}

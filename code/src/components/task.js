@@ -7,6 +7,10 @@ class Task extends React.Component {
     this.props.handleRemoveTask(this.props.todo.id)
   }
 
+  handleClick = () => {
+    this.props.handleClick(this.props.todo.index)
+  }
+
   render() {
     return (
       <div className="task-container">
