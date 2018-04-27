@@ -22,7 +22,7 @@ class Task extends React.Component {
 
         <div>
           <button className="task-button" onClick={() => this.props.handleClick(this.props.index)}>
-            {this.props.todo.done ? "todo" : "done"}
+              {this.props.todo.done ? "undo" : "done"}
           </button>
         </div>
 

@@ -18,7 +18,7 @@ class ListFin extends React.Component {
           </div>
           <div>
             <p>
-              Yay! You have done {filteredArray.length} tasks. In your list you have {this.props.todos.length} tasks todo. Keep up the good work!
+              <span className="big">Yay! You have done <span className="green">{filteredArray.length}</span> tasks.</span>
             </p>
           </div>
           { filteredArray.length > 6 ?

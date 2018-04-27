@@ -16,3 +16,11 @@
   width: 250px;
   margin-top: 40px;
 }
+
+.listfin .green {
+  color: green;
+}
+
+.listfin .big {
+  font-size: 60px;
+}
