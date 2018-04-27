@@ -8,11 +8,18 @@ import "./app.css"
 
 class App extends React.Component {
 
-  state = {
-    inputValue: "",
-    todos: [
-      { value: "Plant a tree", done: false, id: Date.now() }
-    ]
+  constructor(props) {
+    super (props)
+    const fromStorage = JSON.parse(localStorage.getItem("userList"))
+    const todos = fromStorage ? fromStorage : [{ value: "Plant a tree", done: false, id: Date.now() }]
+    this.state = {
+      inputValue: "",
+      todos
+    }
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem("userList", JSON.stringify(this.state.todos))
   }
 
   handleSubmit = event => {
