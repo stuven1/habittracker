@@ -55,8 +55,7 @@ class App extends React.Component {
     })
     this.setState({ todos })
   }
-
-
+  
   handleChange = event => {
     this.setState({ inputValue: event.target.value })
   }
