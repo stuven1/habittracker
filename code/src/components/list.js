@@ -36,7 +36,6 @@ class List extends React.Component {
       </div>
     )
   }
-
 }
 
 export default List

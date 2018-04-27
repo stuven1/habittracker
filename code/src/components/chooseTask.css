@@ -1,3 +1,5 @@
+/* This sheet is for chooseTask.js and for Button.js */
+
 .chooseTaskButton {
   width: 150px;
   height: 150px;
@@ -7,14 +9,12 @@
   margin: 10px;
   font-size: 30px;
   outline: none;
-  /* box-shadow: 0px 5px black; */
 }
 
 button.down {
   background: #137e4e;
   color: lightgrey;
   outline: none;
-  /*text-decoration: line-through;*/
 }
 
 .chooseTask-container {
@@ -25,14 +25,6 @@ button.down {
   padding: 20px 50px;
   width: 100%;
 }
-
-/* .choosetask-headline {
-  height: 90px;
-  padding: 30px;
-  border-top: 2px dashed black;
-  font-size: 30px;
-  color: black;
-} */
 
 @media(min-width: 540px) {
   .chooseTask-button {

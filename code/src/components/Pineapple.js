@@ -25,7 +25,6 @@ class Pineapple extends React.Component {
       </div>
     )
   }
-
 }
 
 export default Pineapple

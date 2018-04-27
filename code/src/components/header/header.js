@@ -1,6 +1,5 @@
 import React from "react"
 import "./header.css"
-
 import KivraLogo from "../../images/kivralogo.png"
 import Sevenlogoleaf from "../../images/sevenlogoleaf.png"
 

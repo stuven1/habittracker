@@ -4,7 +4,6 @@ import ChooseTask from "./ChooseTask"
 import Form from "./form/form"
 import List from "./list"
 import ListFin from "./listFin"
-import Pineapple from "./Pineapple"
 import "./app.css"
 
 class App extends React.Component {
@@ -100,7 +99,6 @@ class App extends React.Component {
       </div>
     )
   }
-
 }
 
 export default App

@@ -31,7 +31,6 @@
 .delete-button {
   text-align: center;
   width: 80px;
-  border: 1px dashed black;
   outline: none;
   background-color: #27b472;
   color: white;
@@ -53,4 +52,4 @@
   height: 30px;
   font-size: 14px;
   padding-top: 5px;
-  }
+}

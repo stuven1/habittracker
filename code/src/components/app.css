@@ -11,12 +11,11 @@
 
 .app-form-list-form {
   background-color: white;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  padding: 0px 40px;
+  padding: 0 40px;
 }
 
 .app-form {

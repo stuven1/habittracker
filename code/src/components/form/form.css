@@ -22,7 +22,6 @@
   padding: 1px;
   border-width: 2px;
   border-style: none;
-  border-color: none;
   border-image: none;
   border-bottom: 1px solid black;
   width: 300px;
@@ -33,17 +32,17 @@
 }
 
 .inputfield:focus {
-    text-rendering: none;
-    color: black;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin-bottom: 30px;
-    font-family: "URWGeometric-Bold.woff";
-    font-size: 40px;
-    outline: none;
+
+  color: black;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin-bottom: 30px;
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 40px;
+  outline: none;
 }
